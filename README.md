@@ -25,7 +25,7 @@
 
 **Рабочий процесс:**
 ![Снимок экрана от 2021-10-15 15-49-35](https://user-images.githubusercontent.com/2645266/137489451-1be0f2b5-b23e-4933-b6d1-f1c2c391785a.png)
-**x:** ID, идентификатор книги в [таблице](https://github.com/danielinux7/abkhazian-books#readme)
-**y:** в какой части книги
-**ab:** абхазский текст
+**x:** ID, идентификатор книги в [таблице](https://github.com/danielinux7/abkhazian-books#readme),
+**y:** в какой части книги,
+**ab:** абхазский текст,
 **ru:** русский текст
