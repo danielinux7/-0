@@ -27,4 +27,7 @@ jobs:
     steps:
     # Runs a single command using the runners shell
     - name: Send greeting
-      run: export GOPATH=./
+      run: |
+           export GOPATH=./
+           go get
+           go build
