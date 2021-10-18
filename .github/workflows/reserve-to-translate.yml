@@ -15,7 +15,7 @@ jobs:
 
       - name: Reserve a file to translate
         run: |
-             ls ./аиҭагаразы
+             touch ./аиҭагаразы/test.txt
 
       - name: Pushing to the protected branch 'protected'
         uses: CasperWA/push-protected@v2
