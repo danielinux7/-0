@@ -15,10 +15,7 @@ jobs:
 
       - name: Reserve a file to translate
         run: |
-             ls
-
-      - name: Modifiy the specific files using action
-        uses: action-owner/action-repo@ref
+             ls > list.txt
 
       - name: Commit and push changes
         run: |
