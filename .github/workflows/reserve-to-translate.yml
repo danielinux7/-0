@@ -15,7 +15,7 @@ jobs:
 
       - name: Reserve a file to translate
         run: |
-             ls > list.txt
+             ls
 
       - name: Pushing to the protected branch 'protected'
         uses: CasperWA/push-protected@v2
