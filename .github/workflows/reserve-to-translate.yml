@@ -1,0 +1,30 @@
+jobs:
+  job1:
+    name: Reserve a file
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2.3.5
+
+      - name: Reserve a file to translate
+        run: |
+             ls
+          --- shell scripts or command lines to execute ---
+# If you execute some shell scripts or command lines to modify
+# the files, use the 'run' key.
+# More details, see "https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions#jobsjob_idstepsrun"
+
+      - name: Modifiy the specific files using action
+        uses: action-owner/action-repo@ref
+# If you execute an action to modify the files, use the 'uses' key.
+# Just like as the previous step that executes the checkout action.
+# More details, see "https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions#jobsjob_idstepsuses"
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.name "danielinux7"
+          git config --global user.email "daniel.abzakh@gmail.com"
+
+          git add -A
+          git commit -m "File is reserved for translation!"
+          git push
