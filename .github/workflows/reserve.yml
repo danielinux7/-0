@@ -5,6 +5,10 @@ on:
       - edited
     tags:
       - аанкылара
+  workflow_dispatch:
+    inputs:
+      name:
+        description: 'Reserve a file'
 jobs:
   reserve_file:
     runs-on: ubuntu-latest
