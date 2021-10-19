@@ -1,6 +1,6 @@
 name: Reserve file
 on:
-  discussion:
+  discussion_comment:
     types:
       - edited
     tags:
@@ -12,8 +12,6 @@ on:
 jobs:
   reserve_file:
     runs-on: ubuntu-latest
-    permissions:
-      discussion: write
     steps:
       - name: reserve file
         with:
