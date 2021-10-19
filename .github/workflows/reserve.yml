@@ -12,7 +12,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: reserve file
-        with:
-          repo-token: ${{ secrets.PUSH_TO_PROTECTED_BRANCH }}
         run: | 
              ls
