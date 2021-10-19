@@ -3,8 +3,6 @@ on:
   discussion_comment:
     types:
       - edited
-    tags:
-      - аанкылара
   workflow_dispatch:
     inputs:
       name:
