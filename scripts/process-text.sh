@@ -8,4 +8,7 @@ do
   sed -i -r 's/([[:alpha:]][[:alpha:]][[:alpha:]]\.) /\1\n/g' $file;
   sort $file | uniq > $file+2
   cat $file+2 | awk '{ print length, $0 }' | sort -n -s | cut -d" " -f2- > $file
+  rm $file+2
+  ## here is more work needed.
+  split -l 500 -d $file ${file/.txt//}
 done
